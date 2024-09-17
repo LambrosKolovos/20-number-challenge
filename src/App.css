@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  background: #1c3b57;
+  padding: 50px;
+  border-radius: 10px;
+  gap: 50px;
+  min-height: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-wrapper {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.current-number-container {
+  width: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-controls {
+  display: flex;
+  gap: 50px;
+}
+
+.game-buttons {
   display: flex;
   flex-direction: column;
+}
+
+.container-middle {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 200px;
+}
+@media (width <= 800px) {
+  .container {
+    gap: 30px;
+    background: unset;
+    padding: 30px;
+  }
+  .container-controls {
+    flex-direction: column;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  position: absolute;
+  font-size: 12px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: #28c76f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

@@ -1,0 +1,34 @@
+.number-div-container {
+  background: #85c1ff;
+  min-width: 140px;
+  height: 30px;
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.number-div-header {
+  background: #1e6fdb;
+  text-align: center;
+  flex: 1.5;
+  font-size: 20px;
+}
+
+.number-div-value {
+  text-align: center;
+  width: 100%;
+  flex: 4;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #1a2e3b;
+}
+
+.disabled {
+  opacity: 0.7;
+  background: lightcoral;
+}
+
+.active:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
