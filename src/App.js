@@ -98,6 +98,9 @@ function App() {
   });
   return (
     <>
+      <div className="description">
+        Sort all {difficulty} numbers in ascending order to win!
+      </div>
       <div className="container">
         <NumberList
           availableIdx={availableIndexes()}
